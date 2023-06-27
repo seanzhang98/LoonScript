@@ -93,7 +93,7 @@ obj.subscriber.subscriptions = {
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
         "store": "app_store",
-        "unsubscribe_detected_at": "2022-10-07T11:53:31Z"
+        "unsubscribe_detected_at": null
       },
       "rc_promo_spark2_lifetime": {
         "is_sandbox": false,
