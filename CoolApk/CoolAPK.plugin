@@ -1,0 +1,19 @@
+#!name=CoolAPK去广告
+#!desc=酷安去广告
+#!author=ddgksf2013
+#!icon=https://github.com/seanzhang98/LoonScript/blob/main/CoolApk/coolapk_icon.png?raw=true
+
+[Script]
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList.*, script-path=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/CoolApk/coolapk.js, tag=酷安_推广广告
+
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8?.*, script-path=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/CoolApk/coolapk.js, tag=酷安_首页广告
+
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList?.*, script-path=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/CoolApk/coolapk.js, tag=酷安_评论广告
+
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail.*, script-path=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/CoolApk/coolapk.js, tag=酷安_商品推广
+
+[Rewrite]
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject
+
+[MITM] 
+hostname = api.coolapk.com
