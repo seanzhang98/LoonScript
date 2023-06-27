@@ -4,6 +4,6 @@
 
 var obj = JSON.parse($response.body);
 
-obj.["has_subscribed_to_premium"]=true;
+obj.has_subscribed_to_premium=true;
 
 $done({body:JSON.stringify(obj)});
