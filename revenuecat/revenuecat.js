@@ -37,6 +37,12 @@ obj.subscriber.entitlements = {
         "purchase_date": "2022-08-05T10:26:37Z",
         "product_identifier": "rc_promo_spark2_lifetime",
         "expires_date": "2222-06-18T10:26:37Z"
+      },
+      "MySwimPro Coach": {
+        "grace_period_expires_date": null,
+        "purchase_date": "2023-06-28T14:36:15Z",
+        "product_identifier": "com_myswimpro_elite_coach_yearly_v1_apple_v1",
+        "expires_date": "2099-07-05T14:36:15Z"
       }
     },
   
@@ -60,7 +66,7 @@ obj.subscriber.subscriptions = {
         "refunded_at": null,
         "auto_resume_date": null,
         "grace_period_expires_date": null,
-        "period_type": "trial",
+        "period_type": "normal",
         "purchase_date": "2023-06-27T15:32:50Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
@@ -115,8 +121,22 @@ obj.subscriber.subscriptions = {
         "refunded_at": null,
         "auto_resume_date": null,
         "grace_period_expires_date": null,
-        "period_type": "trial",
+        "period_type": "normal",
         "purchase_date": "2023-06-27T17:08:00Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      },
+      "com_myswimpro_elite_coach_yearly_v1_apple_v1": {
+        "original_purchase_date": "2023-06-28T14:36:16Z",
+        "expires_date": "2099-07-05T14:36:15Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "auto_resume_date": null,
+        "grace_period_expires_date": null,
+        "period_type": "normal",
+        "purchase_date": "2023-06-28T14:36:15Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
         "store": "app_store",
