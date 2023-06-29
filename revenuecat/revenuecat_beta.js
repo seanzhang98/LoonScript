@@ -1,9 +1,9 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-let userAgent = navigator.userAgent;
+let appName = navigator.userAgent;
 
-if(userAgent.match(.*MySwimPro.*){
+if (appName.match(.*MySwimPro.*){
   obj.subscriber.entitlements = {
     "MySwimPro Coach": {
         "grace_period_expires_date": null,
@@ -12,7 +12,6 @@ if(userAgent.match(.*MySwimPro.*){
         "expires_date": "2099-07-05T14:36:15Z"
       }
     },
-
   obj.subscriber.subscriptions = {
     "com_myswimpro_elite_coach_yearly_v1_apple_v1": {
         "original_purchase_date": "2023-06-28T14:36:16Z",
@@ -28,9 +27,10 @@ if(userAgent.match(.*MySwimPro.*){
         "store": "app_store",
         "unsubscribe_detected_at": null
       }
-}
-
-if(userAgent.match(.*Spark.*){
+    }
+  body = JSON.stringify(obj); 
+  $done({body});
+  } else if (appName.match(.*Spark.*){
     obj.subscriber.entitlements = {
       "premium": {
         "grace_period_expires_date": null,
@@ -45,7 +45,6 @@ if(userAgent.match(.*Spark.*){
         "expires_date": "2099-06-18T10:26:37Z"
       }
     },
-
   obj.subscriber.subscriptions = {
       "spark_b_4199_1y_1w0": {
         "original_purchase_date": "2022-10-06T08:29:18Z",
@@ -89,7 +88,60 @@ if(userAgent.match(.*Spark.*){
         "unsubscribe_detected_at": null
       }
     }
-
-
-body = JSON.stringify(obj); 
-$done({body});
+  body = JSON.stringify(obj); 
+  $done({body});
+  } else if (appName.match(.*Pillow.*){
+  obj.subscriber.entitlements = {
+      "premium": {
+        "grace_period_expires_date": null,
+        "purchase_date": "2023-06-27T15:32:50Z",
+        "product_identifier": "com.neybox.pillow.premium.year",
+        "expires_date": "2099-07-15T05:14:16Z"
+      }
+    },
+  obj.subscriber.subscriptions = {
+      "com.neybox.pillow.premium.year": {
+        "original_purchase_date": "2023-06-27T15:32:51Z",
+        "expires_date": "2099-07-15T05:14:16Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "auto_resume_date": null,
+        "grace_period_expires_date": null,
+        "period_type": "normal",
+        "purchase_date": "2023-06-27T15:32:50Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  body = JSON.stringify(obj); 
+  $done({body});
+  } else if (appName.match(.*Transit.*){
+  obj.subscriber.entitlements = {
+      "Royale": {
+        "grace_period_expires_date": null,
+        "purchase_date": "2023-06-27T15:39:30Z",
+        "product_identifier": "com.samvermette.Transit.royale.group2.annual",
+        "expires_date": "2099-07-15T05:14:16Z"
+      }
+    },
+  obj.subscriber.subscriptions = {
+      "com.samvermette.Transit.royale.group2.annual": {
+        "original_purchase_date": "2023-06-27T15:39:31Z",
+        "expires_date": "2099-07-15T05:14:16Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "auto_resume_date": null,
+        "grace_period_expires_date": null,
+        "period_type": "trial",
+        "purchase_date": "2023-06-27T15:39:30Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  body = JSON.stringify(obj); 
+  $done({body});
+  }
