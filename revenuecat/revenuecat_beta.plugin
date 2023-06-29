@@ -1,0 +1,10 @@
+#!name=Revenuecat unlocks
+#!desc=解锁一系列由 RevenueCat 提供订阅管理的 App，具体支持 App 列表请查询：https://github.com/seanzhang98/LoonScript/blob/main/revenuecat/README.md （正版用户需要暂时停用此插件，恢复订阅后再开启本插件才可恢复正版订阅）
+#!author=SeanZ
+#!icon=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/revenuecat/rc_icon.png
+
+[Script]
+http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/seanzhang98/LoonScript/main/revenuecat/revenuecat_beta.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = api.revenuecat.com
