@@ -43,6 +43,12 @@ obj.subscriber.entitlements = {
         "purchase_date": "2023-06-28T14:36:15Z",
         "product_identifier": "com_myswimpro_elite_coach_yearly_v1_apple_v1",
         "expires_date": "2099-07-05T14:36:15Z"
+      },
+      "Premium": {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-06-15T09:07:16Z",
+        "product_identifier": "com.cf.adboard.monthly.subscription",
+        "expires_date": "2024-07-15T09:07:16Z"
       }
     },
   
@@ -141,6 +147,21 @@ obj.subscriber.subscriptions = {
         "ownership_type": "PURCHASED",
         "store": "app_store",
         "unsubscribe_detected_at": null
+      },
+      "com.cf.adboard.monthly.subscription": {
+        "original_purchase_date": "2024-06-15T09:07:17Z",
+        "expires_date": "2099-07-05T14:36:15Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "auto_resume_date": null,
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "normal",
+        "purchase_date": "2024-06-15T09:07:16Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "store_transaction_id": "480001960997361"
       }
     }
 
