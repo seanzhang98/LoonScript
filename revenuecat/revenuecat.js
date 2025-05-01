@@ -14,6 +14,12 @@ obj.subscriber.entitlements = {
         "product_identifier": "co.bergen.Darkroom.product.year.everything",
         "purchase_date": "2022-07-08T05:14:16Z"
       },
+      "Gamery+": {
+        "grace_period_expires_date": null,
+        "purchase_date": "2025-05-01T09:59:10Z",
+        "product_identifier": "2",
+        "expires_date": "2099-05-08T09:59:10Z"
+      },
       "premium": {
         "grace_period_expires_date": null,
         "purchase_date": "2023-06-27T15:32:50Z",
@@ -53,6 +59,26 @@ obj.subscriber.entitlements = {
     },
   
 obj.subscriber.subscriptions = {
+      "2": {
+        "original_purchase_date": "2025-05-01T09:59:11Z",
+        "expires_date": "2099-05-08T09:59:10Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "440002352088386",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "trial",
+        "price": {
+          "amount": 0,
+          "currency": "CNY"
+        },
+        "purchase_date": "2025-05-01T09:59:10Z",
+        "display_name": "Yearly",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      },
       "co.bergen.Darkroom.product.year.everything": {
         "billing_issues_detected_at": null,
         "expires_date": "2099-07-15T05:14:16Z",
